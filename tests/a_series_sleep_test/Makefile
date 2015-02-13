@@ -1,4 +1,4 @@
-TARGET = XP-SKC-A16
+TARGET = SLICEKIT-A16
 APP_NAME =
 XCC_FLAGS = -O2 -g
 USED_MODULES = lib_slicekit_support lib_logging lib_a_series_support

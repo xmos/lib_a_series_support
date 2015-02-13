@@ -1,3 +1,4 @@
+#include <platform.h>
 #include "a_series_sleep.h"
 #include "debug_print.h"
 #include "xassert.h"

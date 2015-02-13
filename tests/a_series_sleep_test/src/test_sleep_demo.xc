@@ -7,6 +7,8 @@
 #define RTC_TIME 1000  //Time awake in ms
 #define SLEEP_TIME 10000  //Time asleep in ms
 
+on tile[0] : port leds = XS1_PORT_4E;
+
 //function to initialise the sleep memory test array
 void init_sleep_mem(char write_val, char memory[], unsigned char size ){
   for (unsigned i = 0; i < size; i++)
@@ -20,6 +22,18 @@ int compare_sleep_mem(char memory_w[], char memory_r[], unsigned char size ){
 }
 
 void sleep_demo(void){
+
+  // Writes an led (using the gpio slice plugged into tile[0], triangle) 
+  // for a few seconds. This allows us to tell that the 
+  // xcore wakes up from sleep mode, as it will do this first.
+  // Note: This executable need to be loaded into the flash so as 
+  // it can rerun this binary on reset (i.e. after waking up).
+  for (unsigned int i = 0; i < 5; ++i) {
+    leds <: 0;
+    delay_seconds(1);
+    leds <: 0xf;
+    delay_seconds(1);
+  }
 
   timer tmr;
   int sys_start_time, temp, all_tests_passed = 1;
@@ -95,6 +109,9 @@ void sleep_demo(void){
   debug_printf("Hint: Measure voltage between pins 1 and 3 on XTAG analog connctor H to observe chip current\n");
 
   at_pm_sleep_now(); //Go to sleep. Debugger will disconnect after this due to chip being powered down
+
+  // Note: If this binary is in the flash, then when it wakes up (resets) it will 
+  // rerun, the leds will flash, which will signify that this test has passed.
 }
 
 
