@@ -1,0 +1,2 @@
+DEPENDENT_MODULES = lib_xassert lib_logging
+
