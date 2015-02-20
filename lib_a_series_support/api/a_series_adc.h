@@ -1,10 +1,9 @@
-#ifndef __adc__h__
-#define __adc__h__
+#ifndef AT_ADC_H_
+#define AT_ADC_H_
 
 #include <platform.h>
 #include <xccompat.h>
 #include <xs1_su.h>
-
 
 /**
  * The maximum number of ADCs available on any device.
@@ -137,5 +136,5 @@ void at_adc_read_packet(chanend adc_chan,
               const_adc_config_ref_t config,
               unsigned int data[]);
 
-#endif // __adc__h__
+#endif // AT_ADC_H_
 

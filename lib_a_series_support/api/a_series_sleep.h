@@ -4,8 +4,6 @@
 #include <xs1_su.h>
 #include <platform.h>
 
-//Macro to allow arbitrary struct/array to be passed to sleep memory functions
-//Uses XC cast (x, y) operation. See the _impl functions below also.
 /**
  * Reads sleep memory and copies to array/structure up to 128B
  *
@@ -55,7 +53,6 @@ typedef enum  {
     WAKE_PIN_HIGH   /**<Wake when wake pin is high*/
 }
 at_wake_sources_t;
-
 
 /** Function that writes an array of size up to 128B to sleep memory.
  * This is the worker function that copies the array from the sleep memory.
@@ -171,6 +168,5 @@ unsigned int at_rtc_read(void);
  * Sets the time to zero.
  */
 void at_rtc_reset(void);
-
 
 #endif /* AT_SLEEP_H_ */

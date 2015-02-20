@@ -4,8 +4,6 @@
 #include <xs1_su.h>
 #include <platform.h>
 
-//////////Watchdog timer//////////
-
 /** Function that enables the watchdog timer. On overflow, it reset the xCORE
  * tile only. The analog tile is not reset.
  * By default, the WDT is disabled by the chip.
@@ -35,6 +33,5 @@ void at_watchdog_set_timeout(unsigned short milliseconds);
  * \returns WDT time in milliseconds.
  */
 unsigned short at_watchdog_kick(void);
-
 
 #endif /* AT_WDT_H_ */
