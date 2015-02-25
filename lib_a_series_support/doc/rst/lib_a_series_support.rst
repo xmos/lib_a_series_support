@@ -1,11 +1,5 @@
 .. include:: ../../../README.rst
 
-Software version and dependencies
-.................................
-
-API
----
-
 A-Series ADC API
 ----------------
 
