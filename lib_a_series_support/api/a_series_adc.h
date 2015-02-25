@@ -127,7 +127,6 @@ void at_adc_read(chanend adc_chan,
  *                     sample will be placed in a separate word. The
  *                     buffer must be big enough to store all the data
  *                     that will be read (samples_per_packet words).
- *
  */
 #ifdef __XC__
 #pragma select handler
