@@ -1,8 +1,8 @@
-A-Series Startkit Support Library
-=================================
+A-Series Support Library
+========================
 
-A-Series Startkit Support Library
----------------------------------
+A-Series Support Library
+------------------------
 
 This library provides support for accessing the available functionality of the 
 XMOS A-Series devices.
