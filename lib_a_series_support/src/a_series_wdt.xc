@@ -1,3 +1,4 @@
+// Copyright (c) 2015, XMOS Ltd, All rights reserved
 #include "a_series_wdt.h"
 #include "debug_print.h"
 #include "xassert.h"

@@ -1,3 +1,4 @@
+// Copyright (c) 2015, XMOS Ltd, All rights reserved
 #include <platform.h>
 #include "a_series_sleep.h"
 #include "debug_print.h"

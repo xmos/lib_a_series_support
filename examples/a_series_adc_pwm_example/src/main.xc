@@ -1,3 +1,4 @@
+// Copyright (c) 2015, XMOS Ltd, All rights reserved
 #include <xscope.h>
 #include "a_series_adc.h"
 #include "pwm_tutorial_example.h"

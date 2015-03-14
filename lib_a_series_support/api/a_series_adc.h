@@ -1,3 +1,4 @@
+// Copyright (c) 2015, XMOS Ltd, All rights reserved
 #ifndef AT_ADC_H_
 #define AT_ADC_H_
 
