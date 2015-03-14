@@ -36,3 +36,12 @@ A-Series Watchdog-Timer API
 .. doxygenfunction:: at_watchdog_set_timeout
 .. doxygenfunction:: at_watchdog_kick
 
+|appendix|
+
+Known Issues
+------------
+
+There are no known issues with this library.
+
+
+.. include:: ../../../CHANGELOG.rst

@@ -13,3 +13,8 @@ Features
  * ADC support.
  * Sleep support.
  * Watchdog timer support.
+
+Software version and dependencies
+.................................
+
+.. libdeps::
