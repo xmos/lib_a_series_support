@@ -1,11 +1,12 @@
-A-Series Support Library
-========================
+OBSOLETE: A-Series Support Library
+==================================
 
 A-Series Support Library
 ------------------------
 
-This library provides support for accessing the available functionality of the 
-XMOS A-Series devices.
+This library provided support for accessing the available functionality of the XMOS A-Series devices.
+These devices have reached end-of-life.
+This repository is no longer maintained.
 
 Features
 ........
